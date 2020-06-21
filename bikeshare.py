@@ -221,6 +221,7 @@ def main():
         city, month, day = get_filters()
         # This function loads the data into data frame
         df = load_data(city, month, day)
+        # displays data and its stats
         display_data(df)
         time_stats(df)
         station_stats(df)
