@@ -26,3 +26,5 @@ It's important to give proper credit. Add links to any repo that inspired you or
 ### About the Project
 This project will give you a statistical data on how the bikes are bein share in the major city areas.
 This includes the most busy hours,station,mean time ,avg time of travel etc.
+
+This script is written in python. Its an interactive user input program.
