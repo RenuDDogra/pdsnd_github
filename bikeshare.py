@@ -219,6 +219,7 @@ def main():
     while True:
         # This filters the date into three variable via city,month,day
         city, month, day = get_filters()
+        # This function loads the data into data frame
         df = load_data(city, month, day)
         display_data(df)
         time_stats(df)
