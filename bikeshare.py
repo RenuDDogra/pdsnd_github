@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
+
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -216,8 +217,11 @@ def user_stats(df):
 
 def main():
     while True:
+        # This filters the date into three variable via city,month,day
         city, month, day = get_filters()
+        # This function loads the data into data frame
         df = load_data(city, month, day)
+        # displays data and its stats
         display_data(df)
         time_stats(df)
         station_stats(df)
